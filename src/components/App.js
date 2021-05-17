@@ -4,14 +4,13 @@ import "./../styles/App.css";
 function App() {
     const[isClicked,setClicked]=useState('false');
 
-    function paraRender(){
+    const paraRender= ()=>{
       setClicked(true);
     }
   return (
     <div id="main">
-      <button id="click" onClick={paraRender}>Click Me</button>
-      {isClicked ? <p id = 'para'>Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p> : null},
-      // Do not alter the main div
+      <button id="click" onClick={paraRender}>Click Me</button>,
+      {isClicked ? <p id = 'para'>Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p>:null},
     </div>
   );
 }
