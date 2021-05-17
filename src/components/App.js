@@ -2,7 +2,7 @@ import React, {Component, useState} from "react";
 import "./../styles/App.css";
 
 function App() {
-    const[isClicked,setToClicked]=useState('false');
+    const[isClicked,setToClicked]=useState(false);
 
     const paraRender= ()=>{
       setToClicked(true);
